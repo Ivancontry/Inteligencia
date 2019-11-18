@@ -97,6 +97,7 @@ namespace Presentacion
             OpenFileDialog buscar = new OpenFileDialog();
             if (buscar.ShowDialog() == DialogResult.OK) {
                 txtRuta.Text = buscar.FileName;
+                Console.WriteLine(txtRuta.Text);
             }
             cargarArchivo(txtRuta.Text);
         }
